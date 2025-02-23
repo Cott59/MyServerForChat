@@ -24,11 +24,13 @@ namespace MyServerForChat
                 {
                     string received = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     Console.WriteLine($"Получено: {received}");
+                    
                     //TCPClientProcessing.Message=received;
                     //string response = "Ответ от сервера: " + received.ToUpper();
                     //byte[] data = Encoding.UTF8.GetBytes(received);
                     //stream.Write(data, 0, data.Length);
                     TCPClientProcessing.sendMessage(received);
+                    JSONProcessing.SaveMessageTojsonFile(received);
                 }
             }
             catch (Exception ex)

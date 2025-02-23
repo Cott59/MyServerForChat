@@ -19,6 +19,10 @@ namespace MyServerForChat
 
 
         //РАССЫЛКА СООБЩЕНИЯ
+        /// <summary>
+        /// РАССЫЛКА СООБЩЕНИЯ
+        /// </summary>
+        /// <param name="mes"></param>
         public static void sendMessage(string mes)
         {
             byte[] data = Encoding.UTF8.GetBytes(mes);
@@ -29,10 +33,11 @@ namespace MyServerForChat
 
             }
            
-
-
-
         }
+
+        
+
+
 
     }
 }

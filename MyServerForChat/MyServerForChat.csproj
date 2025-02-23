@@ -59,6 +59,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TCPClientProcessing.cs" />
+    <Compile Include="JSONProcessing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
