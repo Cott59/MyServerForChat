@@ -45,18 +45,18 @@ namespace MyServerForChat
         }
 
         //ВОЗВРАТ json ФАЙЛ АКТИВНОГО ЧАТА
-        public static byte[] GetJsonFile(string mes)
+        public static string GetJsonFile(string mes)
         {
             string[] datames = getNameGroupFromMes(mes);
             string Chatname = datames[1];
             string filePath = $"{Chatname}.json";
-            //string json = File.ReadAllText(filePath);
-            byte[] data = File.ReadAllBytes(filePath);
+            string json = File.ReadAllText(filePath);
+            //byte[] data = File.ReadAllBytes(filePath);
             
 
 
 
-            return data;
+            return json;
         }
 
 
